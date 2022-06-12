@@ -1,4 +1,4 @@
-let ip = "192.212.174.101"
+let ip = ""
 
 let myFunction = async(ip) => {
     try {
