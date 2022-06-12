@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.div1 {
+    background-image: url("./images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0 50px 0;
+}
+
+.div2 {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.form {
+    width: 100%;
+    padding: 50px 0;
+}
+
+input {
+    width: 85%;
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 15px 0 0 15px;
+    padding: 30px;
+    font-weight: 600;
+    color: hsl(0, 3%, 37%);
+    font-size: 19px;
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 59%);
+    font-weight: 500;
+    font-size: 19px;
+}
+
+button {
+    margin-left: -4px;
+    background: black;
+    border: none;
+    height: 30px;
+    border-radius: 0px 15px 15px 0px;
+    align-items: center;
+    text-align: center;
+    margin-top: -20px;
+    padding: 13px 23px 48px 23px;
+    transition: 0.3s all ease;
+}
+
+button:hover {
+    background: rgb(66, 64, 64);
+}
+
+button img {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.div4 {
+    margin: 0 auto -130px auto;
+    width: 1200px;
+    background: white;
+    z-index: 10000000;
+    position: relative;
+    border-radius: 15px;
+}
+
+.div5 {
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    padding: 40px 10px;
+}
+
+.div5 div {
+    border-right: 2px solid rgb(230, 218, 218);
+    width: 25%;
+    padding: 0 30px;
+}
+
+.div5 p:first-child {
+    font-size: 13px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.div5 p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 25px;
+    transition: 0.3s all ease !important;
+}
+
+.last {
+    border: none !important;
+}
+
+.attribution {
+    font-size: 17px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.attribution a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+
+.attribution a:hover {
+    color: hsl(228, 45%, 44%);
+    text-decoration: underline;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+    .div1 {
+        background-image: url("./images/pattern-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 50px 50px 50px;
+    }
+    .div2 {
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 600px;
+    }
+    .form {
+        width: 100%;
+        padding: 50px 0;
+    }
+    input {
+        width: 85%;
+        outline: none;
+        border: none;
+        height: 30px;
+        border-radius: 15px 0 0 15px;
+        padding: 30px;
+        font-weight: 600;
+        color: hsl(0, 3%, 37%);
+        font-size: 19px;
+    }
+    input::placeholder {
+        color: hsl(0, 0%, 59%);
+        font-weight: 500;
+        font-size: 19px;
+    }
+    button {
+        margin-left: -4px;
+        background: black;
+        border: none;
+        height: 30px;
+        border-radius: 0px 15px 15px 0px;
+        align-items: center;
+        text-align: center;
+        margin-top: -20px;
+        padding: 13px 23px 48px 23px;
+        transition: 0.3s all ease;
+    }
+    button:hover {
+        background: rgb(66, 64, 64);
+    }
+    button img {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .div4 {
+        margin: 0 auto -145px auto;
+        width: 100%;
+        background: white;
+        z-index: 10000000;
+        position: relative;
+        border-radius: 15px;
+    }
+    .div5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 209.6px;
+        padding: 40px 10px;
+    }
+    .div5 div {
+        border-right: none;
+        width: 100%;
+        padding: 0 30px;
+    }
+    .div5 p:first-child {
+        font-size: 13px;
+        color: hsl(0, 0%, 59%);
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .div5 p {
+        margin: 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        transition: 0.3s all ease !important;
+    }
+    .first {
+        border-right: 2px solid rgb(230, 218, 218) !important;
+        padding-bottom: 20px !important;
+    }
+    .second {
+        padding-bottom: 20px !important;
+    }
+    .third {
+        border-right: 2px solid rgb(230, 218, 218) !important;
+    }
+    .attribution {
+        font-size: 17px;
+        text-align: center;
+        padding: 10px;
+        font-weight: 500;
+    }
+    .attribution a {
+        color: black;
+        text-decoration: none;
+        transition: 0.3s all ease;
+    }
+    .attribution a:hover {
+        color: hsl(228, 45%, 44%);
+        text-decoration: underline;
+    }
+    #map {
+        height: 600px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .div1 {
+        background-image: url("./images/pattern-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px 30px 50px 30px;
+    }
+    .div2 {
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .form {
+        width: 100%;
+        padding: 50px 0 25px 0;
+    }
+    input {
+        width: 82%;
+        outline: none;
+        border: none;
+        height: 30px;
+        border-radius: 15px 0 0 15px;
+        padding: 25px 15px;
+        font-weight: 600;
+        color: hsl(0, 3%, 37%);
+        font-size: 15px;
+    }
+    input::placeholder {
+        color: hsl(0, 0%, 59%);
+        font-weight: 600;
+        font-size: 15px;
+    }
+    button {
+        width: 18%;
+        background: black;
+        border: none;
+        height: 30px;
+        border-radius: 0px 15px 15px 0px;
+        align-items: center;
+        text-align: center;
+        margin-top: -20px;
+        padding: 10px 22px 41px 22px;
+        transition: 0.3s all ease;
+    }
+    button:hover {
+        background: rgb(66, 64, 64);
+    }
+    button img {
+        margin-top: 8.5px;
+        margin-bottom: -2px;
+    }
+    .div4 {
+        margin: 0 auto -220px auto;
+        width: 100%;
+        background: white;
+        z-index: 10000000;
+        position: relative;
+        border-radius: 15px;
+    }
+    .div5 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        height: 318.8px;
+        padding: 25px 10px;
+    }
+    .div5 div {
+        border-right: none;
+        width: 100%;
+        padding: 0 30px;
+    }
+    .div5 p:first-child {
+        font-size: 13px;
+        color: hsl(0, 0%, 59%);
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .div5 p {
+        margin: 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        transition: 0.3s all ease !important;
+    }
+    .first {
+        border-right: none !important;
+        padding-bottom: 0 !important;
+    }
+    .second {
+        padding-bottom: 0 !important;
+    }
+    .third {
+        border-right: none !important;
+    }
+    .attribution {
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+        font-weight: 500;
+    }
+    .attribution a {
+        color: black;
+        text-decoration: none;
+        transition: 0.3s all ease;
+    }
+    .attribution a:hover {
+        color: hsl(228, 45%, 44%);
+        text-decoration: underline;
+    }
+    #map {
+        height: 600px;
+        width: 100%;
+    }
+}
