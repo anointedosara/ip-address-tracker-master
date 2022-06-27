@@ -126,7 +126,7 @@ button img {
 }
 
 #map {
-    height: 600px;
+    height: calc(100vh - 324.1px);
     width: 100%;
 }
 
