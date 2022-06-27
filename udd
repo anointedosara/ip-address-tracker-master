@@ -1,23 +1,23 @@
 let ip = ""
 
 let myFunction = async(ip) => {
-    try {
+        try {
 
-        let data = await axios.get(`https://geo.ipify.org/api/v2/country,city?apiKey=at_rdfeUvQxy31sPgBxuyEHvnAgQFlLc&ipAddress=${ip}`);
+            let data = await axios.get(`https://api.ipfind.com/${ip !== "" ? `?ip=${ip}` : "me?"}&auth=34c00f6e-7d4b-45c3-9897-d2f713626a3d`);
         console.log(data.data)
 
-        const { location, isp, as } = data.data
+        const { region, country, timezone } = data.data
 
         let address = document.getElementById("ip")
         let locate = document.getElementById("location")
-        let timezone = document.getElementById("timezone")
+        let Timezone = document.getElementById("timezone")
         let ispn = document.getElementById("isp")
-        locate.innerHTML = (`${location.region}, ${location.country}, ${as.asn}`)
-        ispn.innerHTML = (`${isp}`)
-        timezone.innerHTML = (`UTC ${location.timezone}`)
-        address.innerHTML = (`${data.data.ip}`)
+        locate.innerHTML = (`${region}, ${country}, ${""}`)
+        ispn.innerHTML = (`${""}`)
+        Timezone.innerHTML = (`UTC ${timezone}`)
+        address.innerHTML = (`${data.data.ip_address}`)
 
-        getMap(location.lat, location.lng)
+        getMap(data.data.latitude, data.data.longitude)
     } catch (error) {
         console.log(error)
         alert(error)
